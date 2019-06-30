@@ -41,4 +41,46 @@
         app:circle_color="@color/colorPrimaryDark"
         />
 
+    <com.demo.customerview.customer.HorizontalScrollViewEx
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.demo.customerview.customer.CircleView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            app:circle_color="@color/colorPrimaryDark"
+            />
+
+        <com.demo.customerview.customer.CircleView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            app:circle_color="@color/colorPrimaryDark"
+            />
+
+        <com.demo.customerview.customer.CircleView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            app:circle_color="@color/colorPrimaryDark"
+            />
+
+        <com.demo.customerview.customer.CircleView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            app:circle_color="@color/colorPrimaryDark"
+            />
+
+    </com.demo.customerview.customer.HorizontalScrollViewEx>
+
 </LinearLayout>
