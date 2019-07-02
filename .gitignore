@@ -28,4 +28,6 @@ release/
 vcs.xml
 
 #google-serices.json
-*/google-serices.json
+/*/google-serices.json
+
+*.gitignore
