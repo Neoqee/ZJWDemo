@@ -1,1 +1,1 @@
-include ':app', ':customerview'
+include ':app', ':customerview', ':remoteview', ':firebase'
