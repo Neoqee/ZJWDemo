@@ -26,3 +26,6 @@ release/
 
 #Version control
 vcs.xml
+
+#google-serices.json
+*/google-serices.json
