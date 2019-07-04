@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/open_remote"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_remote"
+            android:text="title"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_remote"
+            android:text="content"
+            android:layout_gravity="bottom"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/image_remote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_weight="1"
+        />
+</LinearLayout>
