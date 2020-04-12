@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MutiLanguage</string>
+    <string name="helloworld">你好世界</string>
+    <string name="changeLanguage">切换语言</string>
+</resources>

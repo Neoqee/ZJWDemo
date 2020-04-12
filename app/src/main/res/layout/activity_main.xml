@@ -65,5 +65,30 @@
         android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
         app:rippleColor="#ffffff"
         />
+    <Button
+        android:id="@+id/button"
+        android:text="Open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_data"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upload"
+        android:text="Upload"
+        android:clickable="false"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ftp"
+        android:text="Ftp"
+        android:clickable="false"
+        />
 
 </LinearLayout>

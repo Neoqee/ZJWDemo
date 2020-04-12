@@ -2,9 +2,9 @@ package com.demo.webviewdemo;
 
 import android.graphics.Bitmap;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebChromeClient;
@@ -28,16 +28,19 @@ public class WebviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
 
+        // 1、获取webview控件
         webView = findViewById(R.id.web);
         progressBar = findViewById(R.id.progressbar);
         progressBar.setMax(100);
         progressBar.setVisibility(View.GONE);
         webView.loadUrl(ApiController.getPayWithCreditCardUrl("F2QW1910019"));
 
+        // 2、获得设置
         WebSettings webSettings=webView.getSettings();
+        // 3、设置JavaScript打开
         webSettings.setJavaScriptEnabled(true);
 
-
+        // 4、设置webviewclient 重写相应方法修改设置自己想要的功能
         webView.setWebViewClient(new WebViewClient(){
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
@@ -57,6 +60,8 @@ public class WebviewActivity extends AppCompatActivity {
                 progressBar.setVisibility(View.GONE);
             }
         });
+
+        // 5、设置webchromeclient 更简易的控制web
         webView.setWebChromeClient(new WebChromeClient(){
             @Override
             public void onProgressChanged(WebView view, int newProgress) {
@@ -76,6 +81,7 @@ public class WebviewActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        // 6、移除webview 要先将webview从父布局里移除再destroy
         ViewGroup parent=findViewById(R.id.parent);
         parent.removeView(webView);
         webView.destroy();

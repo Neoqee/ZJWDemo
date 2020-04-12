@@ -1,1 +1,1 @@
-include ':app', ':customerview', ':remoteview', ':firebase', ':animation', ':gateway', ':demolib', ':webviewdemo'
+include ':app', ':customerview', ':remoteview', ':firebase', ':animation', ':gateway', ':demolib', ':webviewdemo', ':mutilanguage', ':jobscheduler', ':textclock', ':skeleton', ':oomtest'
